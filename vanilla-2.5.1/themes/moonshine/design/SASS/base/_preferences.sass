@@ -1,0 +1,38 @@
+/* ==================================================
+   Notification Preferences
+   http://localhost:8888/CIT-480-L/vanilla/profile/preferences
+/*================================================== */
+    
+.ProfileOptions .ProfileButtons
+    color: $yellow
+
+.ProfileOptions .ProfileButtons:hover
+    color: $white
+
+
+/*font color for email addres in Userbox*/
+.UserBox .WhoIs .Email
+    color: $white
+
+
+.Dashboard.Profile .Column .FormTitleWrapper form
+    box-shadow: 0px 0px 15px $box-shading-grey
+    border-radius: 5px
+
+
+.Dashboard.Profile #Panel .PanelInfo li
+    text-align: center
+
+
+.FormTitleWrapper form .Buttons input#Form_ChangePassword,
+.FormTitleWrapper form .Buttons input#Form_Save,
+.FormTitleWrapper form .Buttons input#Form_SavePreferences,
+.FormTitleWrapper form .Buttons input#Form_Upload
+    background-color: $green
+    color: $white
+    padding: 10px
+    border: none
+    box-shadow: 2px 2px 5px $box-shading-grey
+    &:hover
+        color: $yellow
+        background-color: darken($green, 5%)

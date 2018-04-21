@@ -1,0 +1,58 @@
+/* ==================================================
+    INBOX style
+/*================================================== */
+
+.Box.AddPeople .Buttons #Form_Add
+    background-color: $green
+    color: $white
+    box-shadow: 2px 2px 5px $box-shading-grey
+    border: none
+    &:hover
+        color: $yellow
+        background-color: darken($green, 5%)
+
+
+.Author .Name,
+span.Username,
+.Users a,
+.Excerpt a
+    color: $green
+    &:hover
+        color: $lightest-green
+
+
+.Box.InThisConversation ul.PanelInfo li
+    background-color: $darker-white
+    border: none
+    margin-bottom: 5px
+    border-radius: 5px
+    &:hover
+        background-color: $darker-white
+
+/* ==================================================
+   Styling for New Mail Message page
+/*================================================== */
+
+#ConversationForm label
+    color: $white
+
+
+#ConversationForm .Buttons .Button
+    box-shadow: 2px 2px 5px $black
+
+
+/* ==================================================
+   Styling  Inbox page
+/*================================================== */
+    
+/* remove small new message button from inbox page */
+
+.PageControls .BoxButtons a
+    display: none
+
+.DataListWrap h1 a
+    color: $yellow
+    &:hover
+        color: $white
+
+

@@ -1,0 +1,284 @@
+/* ============================
+ THE GRID
+/*==============================*/
+
+@media screen and (max-width: $break-point-xlg)
+    .col-1 
+        width: 8.33%
+    .col-2 
+        width: 16.66%
+    .col-3 
+        width: 25%
+    .col-4 
+        width: 33.33%
+    .col-5 
+        width: 41.66%
+    .col-6 
+        width: 50%
+    .col-7 
+        width: 58.33%
+    .col-8 
+        width: 66.66%
+    .col-9 
+        width: 75%
+    .col-10 
+        width: 83.33%
+    .col-11 
+        width: 91.66%
+    .col-12 
+        width: 100%
+        
+    .BreadcrumbsWrapper
+        margin-left: 10px
+
+    #Panel, #Content
+        padding-left: 5%
+
+
+    /* edit profile page Change profile picture(hover over image) */
+    .Photo.PhotoWrap.PhotoWrapLarge .ChangePicture
+        width: 104%
+
+    .Column .CommentsWrap ul.MessageList li
+        width: 96%
+
+
+    .Column .CommentsWrap ul
+        margin-bottom: 60px
+
+
+    #Form_Comment .Buttons #Form_PostComment
+        margin-left: 1%
+
+
+    /* Leaving a comment in Discussion page,  button for Post Comment  */
+    .CommentFormWrap #Form_Comment .CommentButton
+        margin-top: 10px
+        margin-right: 5px
+
+@media screen and (max-width: $break-point-lg)
+    #Head .SiteTitle a
+        font-size: 40px
+
+
+
+@media screen and (max-width: $break-point-md)
+    #Content
+        padding-left: 0%
+        width: 60%
+
+    .Preferences div
+        overflow: scroll
+    
+ 
+@media screen and (max-width: $break-point-sm)
+    #Frame
+        overflow: visible
+    
+
+    #Head .SiteMenu a:hover, #Head .SiteMenu a.SignOut:hover
+        border-bottom: none
+    
+    #Head .SiteMenu a 
+        border-bottom: none
+
+    .BreadcrumbsWrapper
+        margin-top: 20px
+        margin-bottom: -5px
+    
+
+    .MeBox,
+    .Box.GuestBox
+        margin-top: -20px
+    
+
+    #Content,
+    .Box.GuestBox,
+    .Box.InThisConversation
+        text-align: center
+    
+
+    .MessageList .Discussion,
+    .CommentsWrap .DataBox div:not(:nth-child(0)),
+    .Profile ul.DataList,
+    .DataList.MessageList.Conversation,
+    .ItemContent.Conversation
+        text-align: left
+    
+
+    .SiteMenu
+        display: none
+    
+
+    #Head .SiteTitle a
+        font-size: 30px
+    
+
+    #Head .hamburgerMenu
+        float: right
+        display: inline
+        margin-top: 31px
+        margin-right: 30px
+    
+    /* javascript trigger for Responsive menu */
+    .SiteMenu.Responsive
+        background-color: $green
+        display: block
+        width: 102%
+        margin-right: -3px
+        text-align: center
+        margin-top: 5px
+        padding: 15px
+  
+
+    .SiteMenu.Responsive a
+        display: block
+  
+
+    .BreadcrumbsWrapper
+        margin-left: 30px
+    
+
+    .Column .FilterMenu,
+    .Column .CategoryFilterTitle,
+    .Column .CategoryFilter,
+    .Column .CategoryFilterOptions,
+    .Column .BoxFilter,
+    .Box.BoxCategories
+        display: none
+        border-top: none
+    
+    #logo
+        width: 55px
+        margin-bottom: -3px
+    
+
+    #Content,
+    #Panel
+        /*float: right*/
+        margin: 0
+        padding: 20px
+        width: 100%
+    
+    .Row
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+    
+
+    .Row:after
+        display: table
+        clear: both
+        content: ""
+    
+    .col-2,
+    .col-10
+        width: 100%
+        margin: 0
+        padding: 10px
+    
+
+    .Column .H
+        margin-top: -40px
+    
+
+    .ProfileOptions
+        margin-top: -35px
+        font-size: 10px
+    
+
+    .MessageList .PageTitle
+        margin-top: -40px
+    
+    /* Create New Discussion page (radio Buttons) */
+    .Column .FormWrapper form .P .List.Inline.PostOptions ul li
+        display: block
+    
+    .Column .FormWrapper form .P .List.Inline ul li b
+        display: inline-block
+    
+
+    /* Profile papge */
+    .Profile .DataListWrap
+        margin-top: 50px
+    
+
+    .Photo.PhotoWrap.PhotoWrapLarge img
+        width: 30%
+    
+    /* edit profile page Change profile picture(hover over image) */
+    .Photo.PhotoWrap.PhotoWrapLarge .ChangePicture
+        width: 20%
+    
+    #Form_Comment .Buttons
+        text-align: center
+        margin-right: 5%
+    
+
+    .Buttons .Button
+        text-align: center
+        margin-top: 2%
+        width: 100%
+    
+
+    /* New Message Page */
+    #ConversationForm .Buttons .Button.Cancel
+        margin-left: -2px
+    
+
+    /* Resetting password strenght bar */
+    .PasswordStrength
+        width: 40% !important
+        margin-left: 30%
+    // remove facebook componenent
+    .fb-page
+        display: none
+    
+    section.beerFinder
+        margin-top: 10% !important
+
+    .brewsSearchbtn
+        width: 100%
+
+@media screen and (max-width: $break-point-xs)
+    .foot .footerText, .foot .socialMedia
+        display: block
+        text-align: center
+
+    .foot i.fa
+        float: none
+        padding-left: 5%
+  
+@media screen and (max-width: $break-point-xxs)
+    .ProfileOptions
+        display: none
+
+
+    #Head .hamburgerMenu
+        font-size: 20px
+        margin-top: 23px
+        margin-right: 27px
+
+
+    #logo
+        width: 45px
+        margin-bottom: -3px
+
+    #Head .SiteTitle a
+        font-size: 25px
+
+
+    .DataList .Item .ItemContent .Meta .MItem.LastDiscussionTitle
+        display: none
+
+
+    #Form_Comment .Buttons #Form_PostComment
+        margin-left: 5px
+
+
+    .Flyout.FlyoutMenu
+        width: 240px
+   
+
+  

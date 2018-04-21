@@ -1,0 +1,1022 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+/* ==================================================*
+ * Primary Colors */
+/*================================================== */
+/* ==================================================*
+ * Secondary Colors */
+/*================================================== */
+/* ==================================================*
+ * Font Family */
+/*================================================== */
+/* ==================================================*
+ * Font size */
+/*================================================== */
+/* ==================================================*
+ * Media break points  */
+/*================================================== */
+/* ==================================================*
+ * Globals */
+/*================================================== */
+* {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Comfortaa", roboto;
+  font-weight: bold; }
+
+::placeholder {
+  font-family: "Comfortaa", roboto; }
+
+body {
+  font-family: "Comfortaa", roboto;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+#Frame {
+  padding-bottom: 5%; }
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+.token-input-list {
+  border: none;
+  border-radius: 5px; }
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  background: #ffffff; }
+
+a,
+input[type="submit"],
+input[type="button"],
+li,
+i,
+input[type="file"]::-webkit-file-upload-button {
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s; }
+
+select {
+  background-color: #e6e6e6;
+  color: #00796B;
+  border: none; }
+
+/* Gear icon placement (only for root user) */
+ul li .Options .ToggleFlyout .OptionsTitle {
+  margin-top: 5px; }
+
+.Meta .MItem a {
+  color: #00796B; }
+  .Meta .MItem a:hover {
+    color: #00c6af; }
+
+.PhotoWrap img,
+.ProfilePhotoSmall {
+  border-radius: 5px;
+  color: #00796B; }
+
+#Frame {
+  overflow: hidden; }
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: #00796B;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px #9E9E9E;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer; }
+  input[type="file"]::-webkit-file-upload-button:hover {
+    color: #FFCA28;
+    background-color: #006054; }
+
+/* ==================================================
+ * User account page */
+/*================================================== */
+.Profile .DataListWrap .FormWrapper.FormWrapper-Condensed {
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.ProfilePhotoLarge {
+  border-radius: 5px; }
+
+a.ChangePicture {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px; }
+
+.Profile .DataListWrap form .Buttons input[type="submit"] {
+  box-shadow: 2px 2px 5px #000000; }
+
+.ProfileOptions {
+  margin-right: 5px;
+  margin-top: 4px; }
+
+.ProfileOptions .NavButton {
+  background-color: #FFCA28;
+  color: #00796B;
+  border-radius: 2px;
+  padding: 3px;
+  margin-right: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px #000000; }
+  .ProfileOptions .NavButton:hover {
+    background-color: #ffffff;
+    color: #00796B; }
+
+.ProfileOptions .ButtonGroup ul.Dropdown.MenuItems li a {
+  background-color: #ffffff; }
+
+.ProfileOptions .ButtonGroup ul.Dropdown.MenuItems li a:hover {
+  background-color: #B2DFDB !important;
+  color: #000000 !important; }
+
+.Profile .User .About.P a,
+.Profile .User a.Hijack {
+  color: #00796B; }
+
+/*admin only, roles/register/ast IP */
+.Profile .User .About.P a:hover,
+.Profile .User a.Hijack:hover {
+  color: #00BFA5; }
+
+/* ==================================================
+ * INBOX style */
+/*================================================== */
+.Box.AddPeople .Buttons #Form_Add {
+  background-color: #00796B;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px #9E9E9E;
+  border: none; }
+  .Box.AddPeople .Buttons #Form_Add:hover {
+    color: #FFCA28;
+    background-color: #006054; }
+
+.Author .Name,
+span.Username,
+.Users a,
+.Excerpt a {
+  color: #00796B; }
+  .Author .Name:hover,
+  span.Username:hover,
+  .Users a:hover,
+  .Excerpt a:hover {
+    color: #00BFA5; }
+
+.Box.InThisConversation ul.PanelInfo li {
+  background-color: #f2f2f2;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 5px; }
+  .Box.InThisConversation ul.PanelInfo li:hover {
+    background-color: #f2f2f2; }
+
+/* ==================================================
+ * Styling for New Mail Message page */
+/*================================================== */
+#ConversationForm label {
+  color: #ffffff; }
+
+#ConversationForm .Buttons .Button {
+  box-shadow: 2px 2px 5px #000000; }
+
+/* ==================================================
+ * Styling  Inbox page */
+/*================================================== */
+/* remove small new message button from inbox page */
+.PageControls .BoxButtons a {
+  display: none; }
+
+.DataListWrap h1 a {
+  color: #FFCA28; }
+  .DataListWrap h1 a:hover {
+    color: #ffffff; }
+
+/* ==================================================
+ * Notification Preferences
+ * http://localhost:8888/CIT-480-L/vanilla/profile/preferences */
+/*================================================== */
+.ProfileOptions .ProfileButtons {
+  color: #FFCA28; }
+
+.ProfileOptions .ProfileButtons:hover {
+  color: #ffffff; }
+
+/*font color for email addres in Userbox */
+.UserBox .WhoIs .Email {
+  color: #ffffff; }
+
+.Dashboard.Profile .Column .FormTitleWrapper form {
+  box-shadow: 0px 0px 15px #9E9E9E;
+  border-radius: 5px; }
+
+.Dashboard.Profile #Panel .PanelInfo li {
+  text-align: center; }
+
+.FormTitleWrapper form .Buttons input#Form_ChangePassword,
+.FormTitleWrapper form .Buttons input#Form_Save,
+.FormTitleWrapper form .Buttons input#Form_SavePreferences,
+.FormTitleWrapper form .Buttons input#Form_Upload {
+  background-color: #00796B;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px #9E9E9E; }
+  .FormTitleWrapper form .Buttons input#Form_ChangePassword:hover,
+  .FormTitleWrapper form .Buttons input#Form_Save:hover,
+  .FormTitleWrapper form .Buttons input#Form_SavePreferences:hover,
+  .FormTitleWrapper form .Buttons input#Form_Upload:hover {
+    color: #FFCA28;
+    background-color: #006054; }
+
+/* ==================================================
+ * Breadcrum menu */
+/*================================================== */
+.BreadcrumbsWrapper {
+  margin-top: 10px; }
+
+.BreadcrumbsWrapper .Breadcrumbs span a {
+  font-size: 15px;
+  color: #00796B; }
+  .BreadcrumbsWrapper .Breadcrumbs span a:hover {
+    color: #00c6af; }
+
+/* ==================================================
+ * Side Menu 1
+ * Profile menu */
+/*================================================== */
+.MeBox,
+.UserBox {
+  background-color: #00796B;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.MeBox .WhoIs a.Username {
+  margin-left: 5px; }
+
+.MeBox > a,
+.MeBox .WhoIs a.Username,
+.UserBox > a,
+.UserBox .WhoIs a.Username {
+  color: #FFCA28; }
+
+.MeBox > a:hover,
+.MeBox .WhoIs a.Username:hover,
+.UserBox > a:hover,
+.UserBox .WhoIs a.Username:hover {
+  color: #ffffff; }
+
+.MeBox .MeMenu .ToggleFlyout > a {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  margin-left: 3px; }
+  .MeBox .MeMenu .ToggleFlyout > a:hover {
+    background-color: #FFCA28; }
+
+/* Me box pop down menu styling */
+.MeBox .MeMenu .ToggleFlyout .Flyout ul li a {
+  color: #00796B; }
+  .MeBox .MeMenu .ToggleFlyout .Flyout ul li a:hover {
+    color: #00c6af; }
+
+.MeBox .MeMenu .Open .MenuItems li a {
+  background-color: #ffffff; }
+  .MeBox .MeMenu .Open .MenuItems li a:hover {
+    background-color: #B2DFDB !important;
+    color: #000000 !important; }
+
+/* ==================================================
+ * New discussion button */
+/*================================================== */
+.BigButton {
+  border-radius: 5px;
+  background-color: #00796B;
+  color: #ffffff;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+  .BigButton:hover {
+    color: #FFCA28;
+    background-color: #006054; }
+
+/* ==================================================
+ * Side menu2
+ * Categorys/recent discuss/activity/My discuss */
+/*================================================== */
+.BoxFilter,
+.Box.BoxCategories,
+.Box.Group.SideMenu .PanelInfo {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 2px solid #00796B;
+  text-align: center;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.FilterMenu li,
+.Box.BoxCategories li,
+.PanelInfo li {
+  color: #FFCA28;
+  background-color: #ffffff; }
+  .FilterMenu li:hover,
+  .Box.BoxCategories li:hover,
+  .PanelInfo li:hover {
+    background-color: #B2DFDB; }
+
+.FilterMenu a,
+.Box.BoxCategories a,
+.PanelInfo a {
+  color: #000000; }
+
+/* styling for active setting */
+#Panel .FilterMenu .Active,
+.Box.BoxCategories .ClearFix.Depth1.Active,
+.PanelInfo li.Popup.Active,
+.PanelInfo li.PictureLink.Active {
+  color: #ffffff;
+  background-color: #00796B; }
+
+#Panel .FilterMenu .Active a,
+.Box.BoxCategories .ClearFix.Depth1.Active a,
+.PanelInfo li.Popup.Active a,
+.PanelInfo li.PictureLink.Active a {
+  color: #FFCA28;
+  background-color: #00796B; }
+
+/* ==================================================
+ * Side menu 3
+ * Category Filter Menu */
+/*================================================== */
+.CategoryFilter {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #00796B;
+  text-align: center;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.CategoryFilter a {
+  color: #00796B; }
+  .CategoryFilter a:hover {
+    color: #00c6af; }
+
+.CategoryFilterTitle,
+.CategoryFilterOptions {
+  color: #000000; }
+
+/* ==================================================
+ * Welcome Message (when user is not loged in) */
+/*================================================== */
+/* Styling for welcome div for new users */
+.Column .Box.GuestBox {
+  background-color: #00796B;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.Column .Box.GuestBox h4 {
+  color: #FFCA28; }
+
+.Column .Box.GuestBox .P a.Button {
+  background-color: #FFCA28;
+  border: none;
+  margin-right: 5px;
+  box-shadow: 2px 2px 5px #000000; }
+  .Column .Box.GuestBox .P a.Button:hover {
+    background-color: #ffffff;
+    color: #00796B; }
+
+/* ==================================================
+ * Pop-up modal for signing in */
+/*================================================== */
+.Entry .MainForm input.InputBox,
+#Form_User_Password input[type="text"] {
+  border: 2px solid #00796B; }
+
+.Entry .MainForm a.ForgotPassword,
+#Form_User_Password a.ForgotPassword,
+.CreateAccount a {
+  color: #00796B; }
+  .Entry .MainForm a.ForgotPassword:hover,
+  #Form_User_Password a.ForgotPassword:hover,
+  .CreateAccount a:hover {
+    color: #00c6af; }
+
+/* dialog buttons */
+form#Form_User_SignIn .Buttons input.Button,
+.Buttons.Footer input,
+#Form_User_Password input[type="submit"],
+.Buttons.Buttons-Confirm input,
+.Buttons #Form_Move {
+  background-color: #00796B;
+  color: #ffffff;
+  box-shadow: 2px 2px 5px #9E9E9E;
+  border: none; }
+  form#Form_User_SignIn .Buttons input.Button:hover,
+  .Buttons.Footer input:hover,
+  #Form_User_Password input[type="submit"]:hover,
+  .Buttons.Buttons-Confirm input:hover,
+  .Buttons #Form_Move:hover {
+    color: #FFCA28;
+    background-color: #006f62; }
+
+#yelpForm label, .distance, .beerNameSearch {
+  color: #ffffff; }
+
+.brewsSearchbtn {
+  color: #000000;
+  background-color: #FFCA28;
+  border: none;
+  box-shadow: 2px 2px 5px #000000;
+  padding: 5px;
+  cursor: pointer; }
+  .brewsSearchbtn:hover {
+    background-color: #ffffff;
+    color: #00796B; }
+
+.radioButtonText {
+  color: #ffffff; }
+
+#yellowHeader {
+  background-color: #FFCA28;
+  color: #00796B; }
+
+.brewsError {
+  color: #ffffff;
+  background: #d50a0a;
+  padding: 4px;
+  border-radius: 5px;
+  text-align: center; }
+
+/* ==================================================
+ * Navbar */
+/*================================================== */
+#Head {
+  background-color: #00796B;
+  border-bottom: 4px solid #FFCA28;
+  color: #ffffff; }
+
+.SiteMenu {
+  float: right !important;
+  margin-top: 45px;
+  margin-right: 5px; }
+
+#Head .SiteMenu a {
+  color: #FFCA28;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  border-bottom: 2px solid #00796B;
+  cursor: pointer; }
+  #Head .SiteMenu a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff; }
+
+#Head .SiteMenu a.SignOut:hover {
+  color: #d50a0a;
+  border-bottom: 2px solid #d50a0a; }
+
+#Head .SiteTitle a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Comfortaa", roboto;
+  text-shadow: 1px 1px #000000; }
+
+#Head .hamburgerMenu {
+  font-size: 30px;
+  display: none;
+  color: #FFCA28; }
+  #Head .hamburgerMenu:hover {
+    color: #ffffff; }
+
+.SiteSearch .InputBox, .SiteSearch .Button {
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 7px; }
+
+/* ==================================================
+ * Monshine logo */
+/*================================================== */
+#logo {
+  width: 80px;
+  margin-bottom: -8px; }
+
+/* ==================================================
+ * Main forum content */
+/*================================================= */
+/* Header for categories */
+.Column .H {
+  background-color: #00796B;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+/* Categorory divs */
+.Column .DataList .Item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 15px #9E9E9E;
+  border: 2px solid #00796B; }
+
+/* forum Categorys headers */
+.Column .DataList .Item .TitleWrap a {
+  color: #ffffff;
+  background-color: #00796B;
+  margin-top: -15px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 5px; }
+  .Column .DataList .Item .TitleWrap a:hover {
+    color: #FFCA28; }
+
+/* remove rss button */
+.Column .DataList .Item .Meta .MItem.RSS {
+  display: none; }
+
+/* most recent by user */
+.Meta .LastDiscussionTitle a {
+  color: #00796B; }
+  .Meta .LastDiscussionTitle a:hover {
+    color: #00c6af; }
+
+.Options .ToggleFlyout ul li a {
+  background-color: #ffffff !important; }
+  .Options .ToggleFlyout ul li a:hover {
+    background-color: #B2DFDB !important;
+    color: #000000 !important; }
+
+/*===================================================
+ * Category Topics */
+/*================================================== */
+.DataList .ItemContent .Title a {
+  color: #00796B; }
+  .DataList .ItemContent .Title a:hover {
+    color: #00c6af; }
+
+.DataList .ItemContent .Meta .Tag {
+  color: #FFCA28;
+  background-color: #00796B; }
+
+.DataList span.Options .ToggleFlyout .OptionsTitle {
+  margin-top: 0px; }
+
+/*===================================================
+ * Styling for Discussions */
+/*================================================== */
+/* Styling for Discussion name */
+.MessageList .PageTitle {
+  background-color: #ffffff;
+  border: 2px solid #00796B;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.MessageList .Item .Discussion {
+  background-color: #00796B;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.Discussion .Item-Header .AuthorWrap .Author a.Username {
+  color: #FFCA28; }
+  .Discussion .Item-Header .AuthorWrap .Author a.Username:hover {
+    color: #ffffff; }
+
+.Discussion .Item-Header .Meta .MItem a {
+  color: #ffffff;
+  cursor: default; }
+
+.Discussion .Item-Header .Meta .MItem.Category,
+.Discussion .Item-Header .Meta .MItem.IPAddress {
+  display: none; }
+
+.ItemContent .Meta .MItem.LastDiscussionTitle {
+  display: inline-block;
+  padding-right: 1px; }
+
+.CommentFormWrap .Form-BodyWrap,
+.MessageFormWrap .Form-BodyWrap {
+  background-color: #00796B;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+/* Styling for "Comments" header */
+.Column .CommentsWrap .DataBox .CommentHeading {
+  background-color: #FFCA28;
+  color: #00796B;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+/* Styling for new comments */
+.Column .CommentsWrap ul.MessageList li {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  width: 97.2%;
+  margin-left: 10px;
+  margin-bottom: 20px; }
+
+.CommentsWrap ul.MessageList li .Comment .Item-Header .AuthorWrap .Author a.Username {
+  color: #00796B; }
+  .CommentsWrap ul.MessageList li .Comment .Item-Header .AuthorWrap .Author a.Username:hover {
+    color: #00c6af; }
+
+.CommentsWrap ul.MessageList li .Comment .Item-Header .Meta .MItem a {
+  color: #000000; }
+
+/* Styling for "Leave a comment" */
+.MessageForm h2.H,
+.MessageForm .Buttons .Back a,
+.MessageForm .Buttons .Back .Bullet {
+  color: #FFCA28; }
+
+.MessageForm .Buttons .Back a:hover {
+  color: #ffffff; }
+
+.MessageForm .Buttons a.Button,
+.MessageForm input.Button {
+  background-color: #FFCA28;
+  border: none;
+  box-shadow: 2px 2px 5px #000; }
+  .MessageForm .Buttons a.Button:hover,
+  .MessageForm input.Button:hover {
+    background-color: #ffffff;
+    color: #00796B; }
+
+/* fixes conflicting issue with  notification preferences */
+.MessageForm .CommentFormWrap form#Form_Comment {
+  box-shadow: none; }
+
+/* edit/delete comment(admin only) */
+.Comment .Options ul.Flyout {
+  padding-left: 2px; }
+
+.Comment .Options ul.Flyout li {
+  margin-left: 1px; }
+
+/* ==================================================
+ * Styling for prompting guess to sign-in/register */
+/*================================================= */
+.Foot .Note a {
+  color: #00796B; }
+  .Foot .Note a:hover {
+    color: #00c6af; }
+
+/* ==================================================
+ * recent disscusions page */
+/*================================================== */
+ *
+ * .ItemContent .Meta .HasNew
+ *    background-color: #B2DFDB */
+/* ==================================================
+ * Styling for activity page(s) */
+/*================================================== */
+.Column .ActivityFormWrap .FormWrapper {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.Column .ActivityFormWrap .FormWrapper .Buttons input.Button {
+  box-shadow: 2px 2px 5px #000000; }
+
+/* ==================================================
+ * New Dicussion form */
+/*================================================== */
+.Column .FormWrapper {
+  background-color: #00796B;
+  border-radius: 5px; }
+
+.Column .FormWrapper form .P label {
+  color: #ffffff; }
+
+.Column .FormWrapper form .P .List.Inline.PostOptions {
+  color: #FFCA28; }
+
+.Column .FormWrapper form .Buttons .Button {
+  background-color: #FFCA28;
+  border: none;
+  margin-right: 5px;
+  box-shadow: 2px 2px 5px #000000; }
+  .Column .FormWrapper form .Buttons .Button:hover {
+    background-color: #ffffff;
+    color: #00796B; }
+
+/* ==================================================
+ * New User form */
+/*================================================== */
+.Column .FormTitleWrapper h1 {
+  color: #ffffff;
+  background-color: #00796B;
+  padding: 5px;
+  border-radius: 5px; }
+
+.Column .FormTitleWrapper .FormWrapper {
+  box-shadow: 0px 0px 15px #9E9E9E; }
+
+.Column .FormTitleWrapper .FormWrapper form#Form_User_Register ul li.Buttons .Button {
+  box-shadow: 2px 2px 5px #000000; }
+
+.Column .FormTitleWrapper .FormWrapper form#Form_User_Register ul li label,
+.Column .FormTitleWrapper .FormWrapper form#Form_User_Register ul li label.CheckBoxLabel a {
+  color: #FFCA28; }
+
+.Column .FormTitleWrapper .FormWrapper form#Form_User_Register ul li .Gloss,
+.Column .FormTitleWrapper .FormWrapper form#Form_User_Register ul li label.RadioLabel,
+.Column .FormTitleWrapper .FormWrapper form#Form_User_Register ul li label.CheckBoxLabel {
+  color: #ffffff; }
+
+footer.foot {
+  background-color: #00796B;
+  padding: 15px;
+  margin: auto auto 0 auto;
+  width: 100%; }
+
+.foot .footerText {
+  color: #FFCA28;
+  opacity: 0.8; }
+
+/* font awesome icons */
+.foot i.fa {
+  float: right;
+  font-size: 25px;
+  color: #e6e6e6;
+  padding-left: 7px;
+  cursor: pointer;
+  opacity: 0.6; }
+  .foot i.fa:hover {
+    color: #FFCA28;
+    opacity: 1; }
+
+/* ============================
+ * THE GRID */
+/*============================== */
+/* ============================
+ * THE GRID */
+/*============================== */
+@media screen and (max-width: 990px) {
+  .col-1 {
+    width: 8.33%; }
+
+  .col-2 {
+    width: 16.66%; }
+
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33%; }
+
+  .col-5 {
+    width: 41.66%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33%; }
+
+  .col-8 {
+    width: 66.66%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33%; }
+
+  .col-11 {
+    width: 91.66%; }
+
+  .col-12 {
+    width: 100%; }
+
+  .BreadcrumbsWrapper {
+    margin-left: 10px; }
+
+  #Panel, #Content {
+    padding-left: 5%; }
+
+  /* edit profile page Change profile picture(hover over image) */
+  .Photo.PhotoWrap.PhotoWrapLarge .ChangePicture {
+    width: 104%; }
+
+  .Column .CommentsWrap ul.MessageList li {
+    width: 96%; }
+
+  .Column .CommentsWrap ul {
+    margin-bottom: 60px; }
+
+  #Form_Comment .Buttons #Form_PostComment {
+    margin-left: 1%; }
+
+  /* Leaving a comment in Discussion page,  button for Post Comment  */
+  .CommentFormWrap #Form_Comment .CommentButton {
+    margin-top: 10px;
+    margin-right: 5px; } }
+@media screen and (max-width: 830px) {
+  #Head .SiteTitle a {
+    font-size: 40px; } }
+@media screen and (max-width: 815px) {
+  #Content {
+    padding-left: 0%;
+    width: 60%; }
+
+  .Preferences div {
+    overflow: scroll; } }
+@media screen and (max-width: 769px) {
+  #Frame {
+    overflow: visible; }
+
+  #Head .SiteMenu a:hover, #Head .SiteMenu a.SignOut:hover {
+    border-bottom: none; }
+
+  #Head .SiteMenu a {
+    border-bottom: none; }
+
+  .BreadcrumbsWrapper {
+    margin-top: 20px;
+    margin-bottom: -5px; }
+
+  .MeBox,
+  .Box.GuestBox {
+    margin-top: -20px; }
+
+  #Content,
+  .Box.GuestBox,
+  .Box.InThisConversation {
+    text-align: center; }
+
+  .MessageList .Discussion,
+  .CommentsWrap .DataBox div:not(:nth-child(0)),
+  .Profile ul.DataList,
+  .DataList.MessageList.Conversation,
+  .ItemContent.Conversation {
+    text-align: left; }
+
+  .SiteMenu {
+    display: none; }
+
+  #Head .SiteTitle a {
+    font-size: 30px; }
+
+  #Head .hamburgerMenu {
+    float: right;
+    display: inline;
+    margin-top: 31px;
+    margin-right: 30px; }
+
+  /* javascript trigger for Responsive menu */
+  .SiteMenu.Responsive {
+    background-color: #00796B;
+    display: block;
+    width: 102%;
+    margin-right: -3px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 15px; }
+
+  .SiteMenu.Responsive a {
+    display: block; }
+
+  .BreadcrumbsWrapper {
+    margin-left: 30px; }
+
+  .Column .FilterMenu,
+  .Column .CategoryFilterTitle,
+  .Column .CategoryFilter,
+  .Column .CategoryFilterOptions,
+  .Column .BoxFilter,
+  .Box.BoxCategories {
+    display: none;
+    border-top: none; }
+
+  #logo {
+    width: 55px;
+    margin-bottom: -3px; }
+
+  #Content,
+  #Panel {
+    /*float: right */
+    margin: 0;
+    padding: 20px;
+    width: 100%; }
+
+  .Row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+
+  .Row:after {
+    display: table;
+    clear: both;
+    content: ""; }
+
+  .col-2,
+  .col-10 {
+    width: 100%;
+    margin: 0;
+    padding: 10px; }
+
+  .Column .H {
+    margin-top: -40px; }
+
+  .ProfileOptions {
+    margin-top: -35px;
+    font-size: 10px; }
+
+  .MessageList .PageTitle {
+    margin-top: -40px; }
+
+  /* Create New Discussion page (radio Buttons) */
+  .Column .FormWrapper form .P .List.Inline.PostOptions ul li {
+    display: block; }
+
+  .Column .FormWrapper form .P .List.Inline ul li b {
+    display: inline-block; }
+
+  /* Profile papge */
+  .Profile .DataListWrap {
+    margin-top: 50px; }
+
+  .Photo.PhotoWrap.PhotoWrapLarge img {
+    width: 30%; }
+
+  /* edit profile page Change profile picture(hover over image) */
+  .Photo.PhotoWrap.PhotoWrapLarge .ChangePicture {
+    width: 20%; }
+
+  #Form_Comment .Buttons {
+    text-align: center;
+    margin-right: 5%; }
+
+  .Buttons .Button {
+    text-align: center;
+    margin-top: 2%;
+    width: 100%; }
+
+  /* New Message Page */
+  #ConversationForm .Buttons .Button.Cancel {
+    margin-left: -2px; }
+
+  /* Resetting password strenght bar */
+  .PasswordStrength {
+    width: 40% !important;
+    margin-left: 30%; }
+
+  .fb-page {
+    display: none; }
+
+  section.beerFinder {
+    margin-top: 10% !important; }
+
+  .brewsSearchbtn {
+    width: 100%; } }
+@media screen and (max-width: 600px) {
+  .foot .footerText, .foot .socialMedia {
+    display: block;
+    text-align: center; }
+
+  .foot i.fa {
+    float: none;
+    padding-left: 5%; } }
+@media screen and (max-width: 555px) {
+  .ProfileOptions {
+    display: none; }
+
+  #Head .hamburgerMenu {
+    font-size: 20px;
+    margin-top: 23px;
+    margin-right: 27px; }
+
+  #logo {
+    width: 45px;
+    margin-bottom: -3px; }
+
+  #Head .SiteTitle a {
+    font-size: 25px; }
+
+  .DataList .Item .ItemContent .Meta .MItem.LastDiscussionTitle {
+    display: none; }
+
+  #Form_Comment .Buttons #Form_PostComment {
+    margin-left: 5px; }
+
+  .Flyout.FlyoutMenu {
+    width: 240px; } }
+
+/*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,94 @@
+/* ==================================================*
+  Globals
+/*================================================== */
+*
+  box-sizing: border-box
+
+h1, h2, h3, h4, h5, h6
+  font-family: $main-font
+  font-weight: bold
+
+::placeholder
+  font-family: $main-font
+
+body
+  font-family: $main-font
+  background-color: $darker-white
+  margin: 0
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+#Frame
+  padding-bottom: 5%
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+.token-input-list
+  border: none
+  border-radius: 5px
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus
+  background: $white
+
+
+a,
+input[type="submit"],
+input[type="button"],
+li,
+i,
+input[type="file"]::-webkit-file-upload-button
+  transition-duration: 0.4s
+  -webkit-transition-duration: 0.4s
+  -moz-transition-duration: 0.4s
+  -o-transition-duration: 0.4s
+
+select
+  background-color: $grey-shading
+  color: $green
+  border: none
+
+/* Gear icon placement (only for root user) */
+
+ul li .Options .ToggleFlyout .OptionsTitle
+  margin-top: 5px
+
+
+// <a> links color/hover gloabal
+
+.Meta .MItem a
+  color: $green
+  &:hover
+    color: lighten($green, 15%)
+
+// stylign for if img is not available
+
+.PhotoWrap img,
+.ProfilePhotoSmall
+  border-radius: 5px
+  color: $green
+
+// Makes frame overflow hidden
+
+#Frame
+  overflow: hidden
+
+// Styling for file upload
+
+input[type="file"]::-webkit-file-upload-button
+  background-color: $green
+  color: $white
+  padding: 10px
+  border: none
+  box-shadow: 2px 2px 5px $box-shading-grey
+  font-size: $sm-font
+  font-weight: bold
+  cursor: pointer
+  &:hover
+    color: $yellow
+    background-color: darken($green, 5%)

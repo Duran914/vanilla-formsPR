@@ -1,0 +1,213 @@
+/* ==================================================
+   Main forum content
+/*================================================= */
+/* Header for categories */
+
+.Column .H
+    background-color: $green
+    color: $white
+    border-radius: 5px
+    padding: 5px
+    margin-bottom: 10px
+    box-shadow: 0px 0px 15px $box-shading-grey
+
+
+/* Categorory divs */
+.Column .DataList .Item
+    background-color: $white
+    border-radius: 5px
+    padding: 15px
+    margin-bottom: 10px
+    box-shadow: 0px 0px 15px $box-shading-grey
+    border: 2px solid $green
+
+
+/* forum Categorys headers */
+.Column .DataList .Item .TitleWrap a
+    color: $white
+    background-color: $green
+    margin-top: -15px
+    margin-left: -16px
+    margin-right: -16px
+    padding: 5px
+    &:hover
+        color: $yellow
+
+
+/* remove rss button */
+.Column .DataList .Item .Meta .MItem.RSS
+    display: none
+
+
+/* most recent by user */
+.Meta .LastDiscussionTitle a
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+
+
+.Options .ToggleFlyout ul li a
+    background-color: $white !important
+    &:hover
+        background-color: #B2DFDB !important
+        color: $black !important
+
+/*===================================================
+      Category Topics
+/*================================================== */
+.DataList .ItemContent .Title a
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+ 
+
+.DataList .ItemContent .Meta .Tag
+    color: $yellow
+    background-color: $green
+ 
+
+.DataList span.Options .ToggleFlyout .OptionsTitle
+    margin-top: 0px
+ 
+/*===================================================
+    Styling for Discussions
+/*================================================== */
+
+/* Styling for Discussion name */
+.MessageList .PageTitle
+    background-color: $white
+    border: 2px solid $green
+    padding: 5px
+    border-radius: 5px
+    box-shadow: 0px 0px 15px $box-shading-grey
+ 
+
+.MessageList .Item .Discussion
+    background-color: $green
+    color: $white
+    padding: 5px
+    border-radius: 5px
+    box-shadow: 0px 0px 15px $box-shading-grey
+ 
+
+.Discussion .Item-Header .AuthorWrap .Author a.Username
+    color: $yellow
+    &:hover
+        color: $white
+ 
+
+.Discussion .Item-Header .Meta .MItem a
+    color: $white
+    cursor: default
+ 
+// Removes ip address/ address
+.Discussion .Item-Header .Meta .MItem.Category,
+.Discussion .Item-Header .Meta .MItem.IPAddress
+    display: none
+ 
+
+.ItemContent .Meta .MItem.LastDiscussionTitle
+    display: inline-block
+    padding-right: 1px
+ 
+
+.CommentFormWrap .Form-BodyWrap,
+.MessageFormWrap .Form-BodyWrap
+    background-color: $green
+    border-radius: 5px
+    box-shadow: 0px 0px 15px $box-shading-grey
+  
+
+/* Styling for "Comments" header */
+.Column .CommentsWrap .DataBox .CommentHeading
+    background-color: $yellow
+    color: $green
+    border-radius: 5px
+    padding: 5px
+    margin-bottom: 10px
+    box-shadow: 0px 0px 15px $box-shading-grey
+  
+/* Styling for new comments */
+.Column .CommentsWrap ul.MessageList li
+    background-color: #e6e6e6
+    border: none
+    border-radius: 5px
+    width: 97.2%
+    margin-left: 10px
+    margin-bottom: 20px
+
+// User name on comment
+.CommentsWrap ul.MessageList li .Comment .Item-Header .AuthorWrap .Author a.Username
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+   
+   
+// Date on comment
+.CommentsWrap ul.MessageList li .Comment .Item-Header .Meta .MItem a
+    color: $black
+   
+
+/* Styling for "Leave a comment" */
+.MessageForm h2.H,
+.MessageForm .Buttons .Back a,
+.MessageForm .Buttons .Back .Bullet
+    color: $yellow
+  
+
+.MessageForm .Buttons .Back a:hover
+    color: $white
+  
+
+.MessageForm .Buttons a.Button,
+.MessageForm input.Button
+    background-color: $yellow
+    border: none
+    box-shadow: 2px 2px 5px #000
+    &:hover
+        background-color: $white
+        color: $green
+
+
+/* fixes conflicting issue with  notification preferences */
+.MessageForm .CommentFormWrap form#Form_Comment
+    box-shadow: none
+
+/* edit/delete comment(admin only) */
+.Comment .Options ul.Flyout
+    padding-left: 2px
+
+.Comment .Options ul.Flyout li
+    margin-left: 1px
+
+
+/* ==================================================
+   Styling for prompting guess to sign-in/register
+/*================================================= */
+.Foot .Note a
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+
+/* ==================================================
+   recent disscusions page
+/*================================================== */
+
+ .ItemContent .Meta .HasNew
+    background-color: #B2DFDB
+
+
+
+/* ==================================================
+   Styling for activity page(s)
+/*================================================== */
+
+.Column .ActivityFormWrap .FormWrapper
+    margin-bottom: 20px
+    box-shadow: 0px 0px 15px $box-shading-grey
+
+
+.Column .ActivityFormWrap .FormWrapper .Buttons input.Button
+    box-shadow: 2px 2px 5px $black
+
+

@@ -1,0 +1,148 @@
+/* ==================================================
+  Breadcrum menu
+/*================================================== */
+.BreadcrumbsWrapper
+    margin-top: 10px
+
+
+.BreadcrumbsWrapper .Breadcrumbs span a
+    font-size: 15px
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+
+/* ==================================================
+  Side Menu 1
+  Profile menu
+/*================================================== */
+
+.MeBox,
+.UserBox 
+    background-color: $green
+    padding: 10px
+    border-radius: 5px
+    box-shadow: 0px 0px 15px $box-shading-grey
+
+
+.MeBox .WhoIs a.Username
+    margin-left: 5px
+
+
+.MeBox > a,
+.MeBox .WhoIs a.Username,
+.UserBox > a,
+.UserBox .WhoIs a.Username
+    color: $yellow
+
+
+.MeBox > a:hover,
+.MeBox .WhoIs a.Username:hover,
+.UserBox > a:hover,
+.UserBox .WhoIs a.Username:hover
+    color: $white
+
+
+.MeBox .MeMenu .ToggleFlyout > a
+    background-color: $white
+    border-radius: 5px
+    padding-top: 4px
+    padding-bottom: 5px
+    margin-left: 3px
+    &:hover
+        background-color: $yellow
+
+
+/* Me box pop down menu styling */
+.MeBox .MeMenu .ToggleFlyout .Flyout ul li a
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+
+
+.MeBox .MeMenu .Open .MenuItems li a
+    background-color: $white
+    &:hover
+        background-color: $light-green !important
+        color: $black !important
+
+/* ==================================================
+  New discussion button
+/*================================================== */
+.BigButton
+    border-radius: 5px
+    background-color: $green
+    color: $white
+    box-shadow: 0px 0px 15px $box-shading-grey
+    &:hover
+        color: $yellow
+        background-color: darken($green, 5%)
+
+/* ==================================================
+   Side menu2
+   Categorys/recent discuss/activity/My discuss
+/*================================================== */
+
+.BoxFilter,
+.Box.BoxCategories,
+.Box.Group.SideMenu .PanelInfo
+    background-color: $darker-white
+    border-radius: 5px
+    border: 2px solid $green
+    text-align: center
+    box-shadow: 0px 0px 15px $box-shading-grey
+
+
+.FilterMenu li,
+.Box.BoxCategories li,
+.PanelInfo li
+    color: $yellow
+    background-color: $white
+    &:hover
+        background-color: $light-green
+
+
+
+.FilterMenu a,
+.Box.BoxCategories a,
+.PanelInfo a
+    color: $black
+
+
+/* styling for active setting */
+#Panel .FilterMenu .Active,
+.Box.BoxCategories .ClearFix.Depth1.Active,
+.PanelInfo li.Popup.Active,
+.PanelInfo li.PictureLink.Active
+    color: $white
+    background-color: $green
+
+
+#Panel .FilterMenu .Active a,
+.Box.BoxCategories .ClearFix.Depth1.Active a,
+.PanelInfo li.Popup.Active a,
+.PanelInfo li.PictureLink.Active a
+    color: $yellow
+    background-color: $green
+
+/* ==================================================
+   Side menu 3
+   Category Filter Menu
+/*================================================== */
+.CategoryFilter
+    background-color: $white
+    border-radius: 5px
+    border: 2px solid $green
+    text-align: center
+    box-shadow: 0px 0px 15px $box-shading-grey
+
+
+.CategoryFilter a
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+  
+
+.CategoryFilterTitle,
+.CategoryFilterOptions
+    color: $black
+

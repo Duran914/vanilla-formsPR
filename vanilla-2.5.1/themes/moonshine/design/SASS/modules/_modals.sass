@@ -1,0 +1,59 @@
+/* ==================================================
+   Welcome Message (when user is not loged in)
+/*================================================== */
+
+/* Styling for welcome div for new users */
+
+.Column .Box.GuestBox
+    background-color: $green
+    color: $white
+    padding: 5px
+    border-radius: 5px
+    box-shadow: 0px 0px 15px $box-shading-grey
+
+
+.Column .Box.GuestBox h4
+    color: $yellow
+
+// Sign in and Register btns
+
+.Column .Box.GuestBox .P a.Button
+    background-color: $yellow
+    border: none
+    margin-right: 5px
+    box-shadow: 2px 2px 5px $black
+    &:hover
+        background-color: $white
+        color: $green
+
+/* ==================================================
+   Pop-up modal for signing in
+/*================================================== */
+
+.Entry .MainForm input.InputBox,
+#Form_User_Password input[type="text"]
+    border: 2px solid $green
+
+
+.Entry .MainForm a.ForgotPassword,
+#Form_User_Password a.ForgotPassword,
+.CreateAccount a
+    color: $green
+    &:hover
+        color: lighten($green, 15%)
+
+
+/* dialog buttons */
+form#Form_User_SignIn .Buttons input.Button,
+.Buttons.Footer input,
+#Form_User_Password input[type="submit"],
+.Buttons.Buttons-Confirm input,
+.Buttons #Form_Move
+    background-color: $green
+    color: $white
+    box-shadow: 2px 2px 5px $box-shading-grey
+    border: none
+    &:hover
+        color: $yellow
+        background-color: darken($green, 2%)
+
