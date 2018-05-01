@@ -23,7 +23,7 @@ addons:
 
 # Sauce labs browser test
 script:
-- php sauceTest.php
+- php vanilla-2.5.1/sauceTest.php
 
 # Slack notifications
 notifications:
