@@ -1,0 +1,33 @@
+language: php
+
+#vanilla forums suggests to use only php 5.6 and 7
+php:
+- 5.6
+
+- 7.0
+
+env:
+- DB=mysql
+
+before_script:
+- curl -sS https://getcomposer.org/installer | php
+- php composer.phar require facebook/webdriver
+
+#connect to sauce labs 
+addons:
+  sauce_connect:
+    username: 
+      secure: SHehF/aFioF24W8B1jp2RPVUsLcywCbTizrBY/6eSOIFh3Tm8DiX+WrKh91jvxqU1zv7jw1ZWAUFels6A1lFZelDeWf5QZ7hqEn/s/DWabfPbYK89ybMGBR9lrYrfds7XAmESNNTg6BBEaSmqlqpPj92piYl7/zq6GNv1R/pcOaTQHDHX8Jrm4AP9fufAssyXCS3Yr55RWUGTjrdR1euRJlPUI4mNwUhkad51mSLgLtQauddoptw+hSiJyMY/fhNmfUqRRgHBIZmpe04YVIPR1OqY/EQ7gI78XGTMyiumTvlH+gfx5gzrFHy1AIGY/zIDkvFPCU2Vfbiqw+K1cGT6GQPra74BpuUKANwXhricA7isG9F8lI67uyYc23HCp4JKxBPDE3QNtSNkS4tP8isLCrF8Bm2NHz62CJetT26j/Avh0YzWTP4xZp2wRV6CBWrCQ/rCw4I+1cXNa1cjcoW4/Md1+3u76BMBpBV/kwj8od2PM1G8DTDJDC+WtI5ORECVIQVtavdXLdQu8PN6ykgq/ID2ZAkS9VgeGntUxcyYc4z8aAk/gAmVvGmAPVVIWrx02Nw4aNavYm4KzcahQV3z8SE+6rxPBGQlY9g6NwoBVo8TJ5PpPcHBYLay6zTqV/TlFvKjRb9+Ne43cw2/OkR/DyzAMPqK7PzTxZr+fPZXk8=
+    access_key:
+      secure: huY7YnGQlCCMhYwaHhOrKtXRyYLWgyhmKoSoA6CiQuO18uJjoQJ4KgDm3V/eRG8ekHrqpNOsrvyrGXoGmbV9MR5Kdi3SWILrOhB/dugzjdLI4bTJ9M6ga/9B3uJwo/lnMZts3YIU6nP9n21HEUU4j6CVIX9naeTaO5K4pVxOY3TRgJ0NqB8zvRt0LDigvHmEsPui+eF8GWXBGujlGMQg0NrDcX+kcbXNg8c1GzigMpVRe6qejvZJHB1FDXcQCpBAxX2ORN3S9lfyrpNCwXLoeJKIonWgQymWk43SGt95KLR6ehB4c3P8CkeZg0pxkCwaCQZOUXkS3HnMaNkNklksuc1KaTu29AkodQOrsHLBxiwZdSRfLTLNWgYanK3gsvkaacEGILSsZubtmTOODEu1aUsTxYwdecPhbiwmSYWq3ZpP6oPsrEaTth19Qyd41F74ZbwJiHxqKDTVe/zW75BZtadFQRm/fYDRsaY8bd60zqD+3tG355qwtmXZP56ttdN/8G9+zmdlVb3edLoNyy57Qt2pMXAGsGbMiP0K00iSyY3GMxsBwmw75U//nx/7hLCIJRlwnR8ngHrET7ly7+ZSyk8ySw7OAAC3tPNsnnxQatGiqa5x+tWQJJhEO4vrss7zJutxBaK7wZevskMswvhw4TwxUcUX39Z7IpMFFJ3kKAk=
+
+# Sauce labs browser test
+script:
+- php sauceTest.php
+
+# Slack notifications
+notifications:
+  slack:
+    rooms:
+      secure: L8G2DPz1VLrwHn7f5VPfH/ZbkKkn3/EAaqvlZlG+/AIXRBmPwebvWkBv/o+ZT0chdhCJ66dzttcyNIb3lQl5kUeUnxd5HwCVfoxLMnqb36CKbzaCDLg2zviKVzGuoLkImzccqdf32ONpTkfcfpbdYWMjHabWOSw+Ym/F7hZbBPW8AmLZKv4ZwcGoMZTvH2Jacsg5HxDsqBech9zo+jrjeNOVXK78x8b11Y/ZBcMo0wLtpt/PYFMV59pwc1lyL06huOkBgRWhhzokmdqsGUsoQCgwYII8cftgjsNtzZ1fzzDPQ/AU+pplRpokLIyUwqRe/wV9tADU3Y/UgVtb5vXgZrJ4QHVgjaxusU85moqpr7AI2hwnda3HW5OGVTHKtjS2LsHn4HA7EO3JEFgCCmFMaSn1bl4hlAwRWo4q+DKmxp7cEr2zGHy3OaYcQ7LAUfGk53wgnIiKIFbTvQJATKQXuwTr32QME+wiJwXhCdO8ewoogTu8PSw+teT4YALFQIgXxmB7CUHUpFiDTuITdmWbPmWcfhcsfcJ87Oih3XoYLIEcT73I3xTmr3F8AypeiFFxyRhpKt/JuSMG/v33zjNRVP4ufugC1HAhK7Mq62gBT6AXGXcWPu6scoi+1cd/rZyAa1k2mSjdg43N3izDa2+h6QtEbmb3/0GyEpNbDnM55+0=
+    on_success: always
