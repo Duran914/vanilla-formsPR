@@ -1,6 +1,9 @@
 #yelpForm label, .distance, .beerNameSearch
     color: $white
 
+.Column.FormWrapper
+    box-shadow: 0px 0px 10px $box-shading-grey
+
 .brewsSearchbtn
     color: $black
     background-color: $yellow
@@ -8,9 +11,18 @@
     box-shadow: 2px 2px 5px $black
     padding: 5px
     cursor: pointer
+    font-size: 12px
+    line-height: 1
+    font-weight: bold
+    border-radius: 2px
     &:hover
         background-color: $white
         color: $green
+
+.brewsSearchbtn:visited
+        olor: $black
+    background-color: $yellow
+
 .radioButtonText
     color: $white
 
@@ -19,8 +31,114 @@
     color: $green
 
 .brewsError
+    display: none
     color: $white
     background: $red
     padding: 4px
     border-radius: 5px
     text-align: center
+
+.searchedReturn i 
+    color: $green
+
+    // search return from yelp
+.searchedReturn:nth-of-type(odd)
+    background-color: $darker-white
+    padding: 10px
+    border-radius: 5px
+    box-shadow: 0 0 5px
+    a
+        color: $green
+        &:hover
+            color: darken($yellow, 15%)
+
+.searchedReturn:nth-of-type(even)
+    background-color: lighten($light-green, 10%)
+    padding: 10px
+    border-radius: 5px
+    box-shadow: 0 0 5px
+    a
+        color: $green
+        &:hover
+            color: darken($yellow, 15%)
+            
+.breweryinfotext, .beerinfotext
+    font-size: 15px
+    font-weight: bolder
+
+.beerinfotext
+    color: $green
+
+.breweryNameText, .beerNameText
+    font-size: 20px
+
+.beerNameText
+    color: darken($yellow, 15%)
+
+.beerNameTextTag
+    font-style: oblique
+    font-size: 17px
+    color: darken($green, 7%)
+
+// beer gif
+#loading
+    display: none
+    margin-top: 10px
+
+#results
+    margin-top: 10px
+
+// yelp business image
+.yelpImg
+    width: 200px
+    height: 200px
+
+.breweryReturnImg
+    width: 50%
+
+.beerReturnImg
+    width: 50%
+    height: 250px
+
+
+.breweryReturnText
+    width: 70%
+    float: right
+    margin-top: -200px
+    line-height: 32px
+
+// beer Info section
+#beerInfo
+    margin-top: 20px
+
+.beerImg
+    width: 65px
+
+.beerReturnText 
+    width: 85%
+    float: right
+    margin-top: -270px
+    line-height: 32px
+
+// search return from Punk API
+.searchedBeerReturn:nth-of-type(odd) 
+    background-color: #f2f2f2
+    padding: 25px
+    border-radius: 5px
+    box-shadow: 0 0 5px
+    margin-bottom: 10px
+    overflow: scroll
+    
+
+.searchedBeerReturn:nth-of-type(even)
+    background-color: lighten($light-green, 10%)
+    padding: 25px
+    border-radius: 5px
+    box-shadow: 0 0 5px
+    margin-bottom: 10px
+    overflow: scroll
+
+// food paring ul indent
+.foodParing
+    margin-left: 25px !important
+

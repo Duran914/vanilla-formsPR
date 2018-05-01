@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Comfortaa", roboto;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -430,16 +430,26 @@ form#Form_User_SignIn .Buttons input.Button,
 #yelpForm label, .distance, .beerNameSearch {
   color: #ffffff; }
 
+.Column.FormWrapper {
+  box-shadow: 0px 0px 10px #9E9E9E; }
+
 .brewsSearchbtn {
   color: #000000;
   background-color: #FFCA28;
   border: none;
   box-shadow: 2px 2px 5px #000000;
   padding: 5px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+  border-radius: 2px; }
   .brewsSearchbtn:hover {
     background-color: #ffffff;
     color: #00796B; }
+
+.brewsSearchbtn:visited {
+  background-color: #FFCA28; }
 
 .radioButtonText {
   color: #ffffff; }
@@ -449,11 +459,108 @@ form#Form_User_SignIn .Buttons input.Button,
   color: #00796B; }
 
 .brewsError {
+  display: none;
   color: #ffffff;
   background: #d50a0a;
   padding: 4px;
   border-radius: 5px;
   text-align: center; }
+
+.searchedReturn i {
+  color: #00796B; }
+
+.searchedReturn:nth-of-type(odd) {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px; }
+  .searchedReturn:nth-of-type(odd) a {
+    color: #00796B; }
+    .searchedReturn:nth-of-type(odd) a:hover {
+      color: #dba500; }
+
+.searchedReturn:nth-of-type(even) {
+  background-color: #d6eeec;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px; }
+  .searchedReturn:nth-of-type(even) a {
+    color: #00796B; }
+    .searchedReturn:nth-of-type(even) a:hover {
+      color: #dba500; }
+
+.breweryinfotext, .beerinfotext {
+  font-size: 15px;
+  font-weight: bolder; }
+
+.beerinfotext {
+  color: #00796B; }
+
+.breweryNameText, .beerNameText {
+  font-size: 20px; }
+
+.beerNameText {
+  color: #dba500; }
+
+.beerNameTextTag {
+  font-style: oblique;
+  font-size: 17px;
+  color: #00554b; }
+
+#loading {
+  display: none;
+  margin-top: 10px; }
+
+#results {
+  margin-top: 10px; }
+
+.yelpImg {
+  width: 200px;
+  height: 200px; }
+
+.breweryReturnImg {
+  width: 50%; }
+
+.beerReturnImg {
+  width: 50%;
+  height: 250px; }
+
+.breweryReturnText {
+  width: 70%;
+  float: right;
+  margin-top: -200px;
+  line-height: 32px; }
+
+#beerInfo {
+  margin-top: 20px; }
+
+.beerImg {
+  width: 65px; }
+
+.beerReturnText {
+  width: 85%;
+  float: right;
+  margin-top: -270px;
+  line-height: 32px; }
+
+.searchedBeerReturn:nth-of-type(odd) {
+  background-color: #f2f2f2;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
+  margin-bottom: 10px;
+  overflow: scroll; }
+
+.searchedBeerReturn:nth-of-type(even) {
+  background-color: #d6eeec;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
+  margin-bottom: 10px;
+  overflow: scroll; }
+
+.foodParing {
+  margin-left: 25px !important; }
 
 /* ==================================================
  * Navbar */
@@ -750,14 +857,14 @@ footer.foot {
   opacity: 0.8; }
 
 /* font awesome icons */
-.foot i.fa {
+.foot i.fab {
   float: right;
   font-size: 25px;
   color: #e6e6e6;
   padding-left: 7px;
   cursor: pointer;
   opacity: 0.6; }
-  .foot i.fa:hover {
+  .foot i.fab:hover {
     color: #FFCA28;
     opacity: 1; }
 
@@ -826,7 +933,32 @@ footer.foot {
   /* Leaving a comment in Discussion page,  button for Post Comment  */
   .CommentFormWrap #Form_Comment .CommentButton {
     margin-top: 10px;
-    margin-right: 5px; } }
+    margin-right: 5px; }
+
+  .breweryReturnText {
+    width: 55%;
+    float: right;
+    margin-top: -210px;
+    line-height: 25px; }
+
+  .beerImg {
+    width: 65px;
+    margin-left: -10px; }
+
+  .beerReturnImg {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px; }
+
+  .beerReturnText {
+    width: 100%;
+    float: none;
+    margin-top: 0px;
+    line-height: 32px;
+    text-align: center; }
+
+  .foodParing {
+    margin-left: 0px !important; } }
 @media screen and (max-width: 830px) {
   #Head .SiteTitle a {
     font-size: 40px; } }
@@ -993,7 +1125,16 @@ footer.foot {
 
   .foot i.fa {
     float: none;
-    padding-left: 5%; } }
+    padding-left: 5%; }
+
+  .breweryReturnImg {
+    width: 100%; }
+
+  .breweryReturnText {
+    width: 100%;
+    float: none;
+    margin-top: 0px;
+    line-height: 32px; } }
 @media screen and (max-width: 555px) {
   .ProfileOptions {
     display: none; }
